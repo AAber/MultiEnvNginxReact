@@ -1,0 +1,47 @@
+{
+  "name": "multienvnginxreact",
+  "version": "1.0.0",
+  "description": "This project demonstrates how to build a multi-environment React application served by NGINX. It includes a React frontend that fetches environment information from an NGINX server, which dynamically provides the environment based on system variables. This setup allows you to deploy the same React application in different environments (e.g., development, staging, production) with configuration handled by NGINX.",
+  "main": "App.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AAber/MultiEnvNginxReact.git"
+  },
+  "keywords": [
+    "React",
+    "multi",
+    "env",
+    "Nginx",
+    "Docker",
+    "K8s"
+  ],
+  "author": "AAber",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AAber/MultiEnvNginxReact/issues"
+  },
+  "homepage": "https://github.com/AAber/MultiEnvNginxReact#readme",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

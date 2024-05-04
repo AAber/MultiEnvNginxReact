@@ -14,7 +14,7 @@ This project demonstrates how to build a multi-environment React application ser
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/example/MultiEnvNginxReact.git
+   git clone https://github.com/AAber/MultiEnvNginxReact.git
    ```
 
 2. Navigate to the project directory:
