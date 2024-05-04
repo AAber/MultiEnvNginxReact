@@ -14,13 +14,13 @@ This project demonstrates how to build a multi-environment React application ser
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/example/multi-env-react-nginx.git
+   git clone https://github.com/example/MultiEnvNginxReact.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd multi-env-react-nginx
+   cd MultiEnvNginxReact
    ```
 
 3. Install dependencies:
@@ -42,13 +42,13 @@ This project demonstrates how to build a multi-environment React application ser
 1. Build the Docker image:
 
    ```bash
-   docker build -t multi-env-react-nginx .
+   docker build -t MultiEnvNginxReact .
    ```
 
 2. Run the Docker container:
 
    ```bash
-   docker run -d -p 8080:80 multi-env-react-nginx
+   docker run -d -p 8080:80 MultiEnvNginxReact
    ```
 
 3. Open your web browser and navigate to [http://localhost:8080](http://localhost:8080) to view the React application served by NGINX.
