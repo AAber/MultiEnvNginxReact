@@ -66,5 +66,3 @@ This project demonstrates how to build a multi-environment React application ser
 
 The NGINX server dynamically provides environment information to the React application via the `/api/environment` endpoint. The NGINX configuration reads the `$ENVIRONMENT` variable from the operating system and includes it in the response header when accessing the endpoint.
 
-To customize the environment configuration, modify the NGINX configuration in the `nginx.conf` file according to your requirements.
-
