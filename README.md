@@ -53,6 +53,9 @@ This project demonstrates how to build a multi-environment React application ser
 
 3. Open your web browser and navigate to [http://localhost:8080](http://localhost:8080) to view the React application served by NGINX.
 
+<img width="1329" alt="image" src="https://github.com/AAber/MultiEnvNginxReact/assets/4179519/aa4864ae-eaf4-467f-a410-98868ce48b00">
+
+
 ## Environment Configuration
 
 The NGINX server dynamically provides environment information to the React application via the `/api/environment` endpoint. The NGINX configuration reads the `$ENVIRONMENT` variable from the operating system and includes it in the response header when accessing the endpoint.
