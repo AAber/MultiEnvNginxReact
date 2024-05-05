@@ -62,6 +62,13 @@ This project demonstrates how to build a multi-environment React application ser
 ![image](https://github.com/AAber/MultiEnvNginxReact/assets/4179519/b3a23a93-f696-4ec9-b356-eebe4c87755e)
 
 
+5. Deploy into K8s production:
+
+   ```bash
+   kubectl apply -f k8s/deploy.yml
+   ```
+
+
 ## Environment Configuration
 
 The NGINX server dynamically provides environment information to the React application via the `/api/environment` endpoint. The NGINX configuration reads the `$ENVIRONMENT` variable from the operating system and includes it in the response header when accessing the endpoint.
