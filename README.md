@@ -48,13 +48,13 @@ This project demonstrates how to build a multi-environment React application ser
 2.  Build the Docker image:
 
    ```bash
-   docker build -t MultiEnvNginxReact .
+   docker build -t multienv-nginx-react .
    ```
 
 3. Run the Docker container:
 
    ```bash
-   docker run --name staging  -e ENVIRONMENT=staging -d -p 8080:8080 MultiEnvNginxReact
+   docker run --name staging  -e ENVIRONMENT=staging -d -p 8080:8080 multienv-nginx-react
    ```
 
 4. Open your web browser and navigate to [http://localhost:8080](http://localhost:8080) to view the React application served by NGINX.
