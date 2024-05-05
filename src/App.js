@@ -28,7 +28,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-        <h1>We are running in the {env ? env : 'Unknown'} env</h1>
+        <h1>We are running in the <code>{env ? env : 'Unknown'}</code> env</h1>
         </p>
         <a
           className="App-link"
