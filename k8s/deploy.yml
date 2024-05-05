@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: multienv-nginx-react
-        image: multienv-nginx-react:0.0.1
+        image: aaber/multienv-nginx-react
         ports:
         - containerPort: 8080
         env:
