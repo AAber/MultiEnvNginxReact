@@ -40,7 +40,6 @@ function App() {
         </a>
       </header>
       <div className="app">
-        <img src="reach_logo.png" alt="React Logo" />
         <h1>We are running in the {env ? env : 'Unknown'} env</h1>
       </div>
     </div>
