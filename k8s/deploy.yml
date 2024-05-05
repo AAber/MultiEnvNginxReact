@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: multienv-nginx-react
+  labels:
+    app: multienv-nginx-react
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: multienv-nginx-react
+  template:
+    metadata:
+      labels:
+        app: multienv-nginx-react
+    spec:
+      containers:
+      - name: multienv-nginx-react
+        image: multienv-nginx-react:0.0.1
+        ports:
+        - containerPort: 8080
+        env:
+        - name: ENVIRONMENT
+          value: production
