@@ -1,23 +1,7 @@
-# Dockerfile
+FROM nginx:stable-alpine
+RUN apk add jq curl
+COPY default.conf /etc/nginx/conf.d/default.conf.template
 
-# Stage 1: Build React application
-FROM node:alpine as build
+COPY build /usr/share/nginx/html
 
-WORKDIR /app
-
-COPY package.json package-lock.json ./
-RUN npm install
-
-COPY . .
-RUN npm run build
-
-# Stage 2: Serve React application with NGINX
-FROM nginx:alpine
-
-COPY --from=build /app/build /usr/share/nginx/html
-COPY nginx.conf /etc/nginx/nginx.conf
-
-EXPOSE 80
-
-CMD ["nginx", "-g", "daemon off;"]
-
+CMD ["/bin/sh",  "-c",  "envsubst < /etc/nginx/conf.d/default.conf.template > /etc/nginx/conf.d/default.conf && exec nginx -g 'daemon off;'"]

@@ -1,3 +1,4 @@
 #!/bin/bash
 
-docker run -e ENVIRONMENT=production -d -p 8080:8080 react-multi-env:latest
+docker run --name test -e ENVIRONMENT=production -d -p 8080:8080 multi-env-nginx-react:latest
+docker logs test
