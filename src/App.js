@@ -28,7 +28,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+        <h1>We are running in the {env ? env : 'Unknown'} env</h1>
         </p>
         <a
           className="App-link"
@@ -40,7 +40,6 @@ function App() {
         </a>
       </header>
       <div className="app">
-        <h1>We are running in the {env ? env : 'Unknown'} env</h1>
       </div>
     </div>
   );
