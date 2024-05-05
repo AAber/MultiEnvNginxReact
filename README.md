@@ -45,7 +45,7 @@ This project demonstrates how to build a multi-environment React application ser
    npm run build
    ```
 
-2. Build the Docker image:
+2.  Build the Docker image:
 
    ```bash
    docker build -t MultiEnvNginxReact .
