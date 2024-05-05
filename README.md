@@ -59,7 +59,7 @@ This project demonstrates how to build a multi-environment React application ser
 
 4. Open your web browser and navigate to [http://localhost:8080](http://localhost:8080) to view the React application served by NGINX.
 
-<img width="1329" alt="image" src="https://github.com/AAber/MultiEnvNginxReact/assets/4179519/aa4864ae-eaf4-467f-a410-98868ce48b00">
+![image](https://github.com/AAber/MultiEnvNginxReact/assets/4179519/b3a23a93-f696-4ec9-b356-eebe4c87755e)
 
 
 ## Environment Configuration
