@@ -26,6 +26,7 @@ This project demonstrates how to build a multi-environment React application ser
 3. Install dependencies:
 
    ```bash
+   nvm use 17
    npm install
    ```
 
