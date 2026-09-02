@@ -69,6 +69,11 @@ This project demonstrates how to build a multi-environment React application ser
    kubectl apply -f k8s/deploy.yml
    ```
 
+6. Docker one liner:
+
+   ```bash
+   docker run --name staging  -e ENVIRONMENT=staging -d -p 8080:8080 multienv-nginx-react
+   ```
 
 ## Environment Configuration
 
