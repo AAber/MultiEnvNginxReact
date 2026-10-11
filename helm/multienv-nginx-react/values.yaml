@@ -1,0 +1,17 @@
+replicaCount: 1
+
+image:
+  repository: aaber/multienv-nginx-react
+  tag: latest
+  pullPolicy: IfNotPresent
+
+environment: production
+
+service:
+  type: ClusterIP
+  port: 8080
+
+ingress:
+  enabled: false
+  host: ""
+  annotations: {}

@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "multienv-nginx-react.fullname" . }}
+  labels:
+    app: {{ include "multienv-nginx-react.fullname" . }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: {{ include "multienv-nginx-react.fullname" . }}
+  template:
+    metadata:
+      labels:
+        app: {{ include "multienv-nginx-react.fullname" . }}
+    spec:
+      containers:
+        - name: {{ .Chart.Name }}
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          ports:
+            - containerPort: 8080
+          env:
+            - name: ENVIRONMENT
+              value: {{ .Values.environment | quote }}

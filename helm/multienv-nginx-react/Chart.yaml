@@ -1,0 +1,6 @@
+apiVersion: v2
+name: multienv-nginx-react
+description: Multi-environment React app served by NGINX
+type: application
+version: 0.1.0
+appVersion: "1.0.0"
