@@ -5,7 +5,7 @@ image:
   tag: latest
   pullPolicy: IfNotPresent
 
-environment: production
+environment: argo-production
 
 service:
   type: ClusterIP
